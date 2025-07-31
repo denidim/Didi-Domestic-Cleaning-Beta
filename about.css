@@ -1,0 +1,38 @@
+.about {
+  background-image: url("images/img-grain-theme-one.8cfa2f19.webp");
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 8rem;
+  margin: 5rem auto;
+}
+
+.about .about-us-content {
+  max-width: 40%;
+  min-width: 400px;
+}
+
+.about h3 {
+  color: white;
+  font-family: "baskerville-urw", serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.about ul {
+  list-style: square;
+  padding-left: 2rem;
+  color: white;
+  font-family: var(--test-font-family);
+  font-weight: 150;
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+}

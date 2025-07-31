@@ -1,0 +1,33 @@
+.header-content {
+  background-image: url("images/bed.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100vh - 6rem);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero {
+  font-family: var(--content-font-family);
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.192);
+  border-radius: 10px;
+  transform: translateY(-5rem);
+}
+
+h1 {
+  font-size: 36px;
+  padding-bottom: 1rem;
+  color: #d2cdcd;
+}
+
+.hero p {
+  font-size: 20px;
+  padding-bottom: 1.3rem;
+  color: #d2cdcd;
+}
