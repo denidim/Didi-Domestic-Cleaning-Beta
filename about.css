@@ -1,21 +1,28 @@
 .about {
   background-image: url("images/img-grain-theme-one.8cfa2f19.webp");
-  height: 60vh;
+  min-height: 60vh; /* Use min-height to allow growing */
+  height: auto; /* Let content define the height */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly; /* Center items for better alignment */
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
-  padding: 2rem 8rem;
-  margin: 5rem auto;
+  padding: 4rem 2rem; /* Use more flexible padding */
+  /* margin: 5rem auto; */
 }
 
-.about .about-us-content {
-  max-width: 40%;
-  min-width: 400px;
+.about-us-content,
+.why-us-content {
+  /* border: 1px solid red; */ /* Removed debug border */
+  flex: 1 1 400px; /* Flex-grow, flex-shrink, flex-basis */
+  max-width: 550px; /* Prevents cards from becoming too wide on large screens */
+  padding: 1rem;
 }
 
-.about h3 {
+/* By making these selectors more specific, we can ensure the styles only apply
+   when the h3 and ul are correctly placed inside their containers. */
+.about-us-content h3,
+.why-us-content h3 {
   color: white;
   font-family: "baskerville-urw", serif;
   font-weight: 400;
@@ -25,7 +32,13 @@
   letter-spacing: 0.1em;
 }
 
-.about ul {
+@media (max-width: 920px) {
+  .about {
+    padding: 2rem 1rem; /* Reduce padding on smaller screens */
+  }
+}
+
+.why-us-content ul {
   list-style: square;
   padding-left: 2rem;
   color: white;
